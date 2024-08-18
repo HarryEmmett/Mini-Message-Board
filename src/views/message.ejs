@@ -1,4 +1,9 @@
-<div>
-  <p><%= message.user %></p>
-  <p><%= message.text %></p>
+<% layout('layout') %>
+<div style="display: flex; flex-direction: column; align-items: center; padding-top: 16px;">
+  <p>User: <%= message.text %></p>
+  <p>From: <%= message.user %></p>
+  <p>Added: <%= message.added%></p>
+  <a href="/" class="btn btn-primary"
+    >Home</a
+  >
 </div>

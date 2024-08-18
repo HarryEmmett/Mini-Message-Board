@@ -1,5 +1,26 @@
+<% layout('layout') %>
 <form method="POST" action="/new">
-    <input type="text" name="name" placeholder="Enter your name..."/>
-    <input type="text" name="messageText" placeholder="Enter your message..."/>
-    <input type="submit" />
- </form>
+  <div class="mb-3">
+    <label for="formName" class="form-label">Name</label>
+    <input
+      name="name"
+      type="text"
+      class="form-control"
+      id="formName"
+      placeholder="Enter your name..."
+    />
+  </div>
+  <div class="mb-3">
+    <label for="formMessage" class="form-label">Message</label>
+    <input
+      name="messageText"
+      type="text"
+      class="form-control"
+      id="formMessage"
+      placeholder="Enter Message..."
+    />
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Add message</button>
+  </div>
+</form>
