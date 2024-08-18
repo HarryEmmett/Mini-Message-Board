@@ -1,0 +1,10 @@
+<h1>HEADING</h1>
+<ul>
+  <% messages.map((message) => { %>
+  <div>
+    <p><%= message.user %></p>
+    <p><%= message.text %></p>
+    <a href="/messages/<%= message.id %>">Open</a>
+  </div>
+  <% }) %>
+</ul>
